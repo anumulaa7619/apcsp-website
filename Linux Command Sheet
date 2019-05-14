@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Linux Reference Page</title>
+    <link href="linuxref.css" rel="stylesheet" type="text/css" />
+  </head>
 <style>
+
+<!-----
 table, th, td {
   border: 1px solid black;
 }
 </style>
 </head>
 <body>
+--->
+
+
+
+<a href="index.html"">Return to HomePage"">back</a><br>
 
 <table style="width:100%">
+<col width="50">
+<col width="80">
+<col width="230">
+<col width="350">
+
   <tr>
     <th>Name of Command</th>
+    <th>Syntax</th>
     <th>Brief Description</th> 
     <th>Example of Common Usage</th>
   </tr>
+
   <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
+    <td>Name of Command</th>
+    <th>Syntax</th>
+    <th>Brief Description</th> 
+    <th>Example of Common Usage</th>
   </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-  </tr>
+  
+
 </table>
