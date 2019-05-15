@@ -33,10 +33,10 @@ table, th, td {
   </tr>
 
   <tr>
-    <td>Name of Command</th>
-    <th>Syntax</th>
-    <th>Brief Description</th> 
-    <th>Example of Common Usage</th>
+    <!--1st Command-->
+    <td>ls</td>
+    <td>Displays all the files in the current directory</td> 
+    <td>ls scripts</td>
   </tr>
   
 
