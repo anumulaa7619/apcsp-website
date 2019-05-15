@@ -35,6 +35,7 @@ table, th, td {
   <tr>
     <!--1st Command-->
     <td>ls</td>
+    <td>PUT SYNTAX HERE</td>
     <td>Displays all the files in the current directory</td> 
     <td>ls scripts</td>
   </tr>
