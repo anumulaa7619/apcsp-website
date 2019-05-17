@@ -21,24 +21,86 @@ table, th, td {
 
 <table style="width:100%">
 <col width="50">
-<col width="80">
 <col width="230">
 <col width="350">
 
   <tr>
     <th>Name of Command</th>
-    <th>Syntax</th>
     <th>Brief Description</th> 
     <th>Example of Common Usage</th>
   </tr>
 
   <tr>
-    <!--1st Command-->
+    <!First Command>
     <td>ls</td>
-    <td>PUT SYNTAX HERE</td>
     <td>Displays all the files in the current directory</td> 
     <td>ls scripts</td>
   </tr>
+  
+  <tr>
+    <!Second Command>
+    <td>cd</td>
+    <td>Moves the user into the intended directory. If none is specified it goes to the highest-level (home) directory</td> 
+    <td>cd website</td>
+  </tr>
+  
+  <tr>
+    <!Third Command>
+    <td>who</td>
+    <td>Prints the name of the user logged into the Linux Shell</td> 
+    <td>whoami => sp1a</td>
+  </tr>
+  
+  <tr>
+    <!Fourth Command>
+    <td>cat</td>
+    <td>Displays The text from a selected file</td> 
+    <td>cat readme => This is a file in a github Directory</td>
+  </tr>
+
+  <tr>
+    <!Fifth Command>
+    <td>exit</td>
+    <td>Allows the user to quit and close SSH upon typing (x)</td> 
+    <td>exit</td>
+  </tr>
+  
+  <tr>
+    <!Sixth Command>
+    <td>mkdir</td>
+    <td>Creates a new empty directory</td> 
+    <td>mkdir projects</td>
+  </tr>
+
+  <tr>
+    <!Seventh Command>
+    <td>pwd</td>
+    <td>Displays the pathway to the current directory</td> 
+    <td>pwd => /home/sp1a/scripts</td>
+  </tr>
+  
+  <tr>
+    <!Eighth Command>
+    <td>date</td>
+    <td>Displays the current date</td> 
+    <td>date => Wed  15 May 8:26:53 UTC 2019</td>
+  </tr>
+
+  <tr>
+    <!Ninth Command>
+    <td>echo</td>
+    <td>Repeats the text indicated after the echo command</td> 
+    <td>echo "hello world"</td>
+  </tr>
+
+  <tr>
+    <!Tenth Command>
+    <td>chmod</td>
+    <td>Alters File Permissions</td> 
+    <td>chmod filename ++x</td>
+  </tr>
+  
+  
   
 
 </table>
