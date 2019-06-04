@@ -8,14 +8,15 @@
   <body>
 
     <h1>Project</h1>
-    <p>View(v) | Enter(e) | Exit(x) </p>
+    <p>View(v) | Enter(e) | Exit(x)</p>
 
     <?php
        // define variables and set to empty values
-       $arg1 = $output = $retc = "";
+       $arg1 = $arg2 = $output = $retc = "";
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
-         exec("/usr/lib/cgi-bin/sp1a/test2 " . $arg1 . " " . $output, $retc); 
+         $arg2 = test_input($_POST["arg2"]);
+         exec("/usr/lib/cgi-bin/sp1a/test2 " . $arg1 . " " . $arg2, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -27,6 +28,7 @@
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Arg1: <input type="text" name="arg1"><br>
+      Arg2: <input type="text" name="arg2"><br>
       <br>
       <input type="submit" value="Go!">
     </form>
@@ -37,7 +39,8 @@
          echo "<h2>Your Input:</h2>";
          echo $arg1;
          echo "<br>";
-
+         echo $arg2;
+         echo "<br>";
        
          echo "<h2>Program Output (an array):</h2>";
          foreach ($output as $line) {
