@@ -16,7 +16,7 @@
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
          $arg2 = test_input($_POST["arg2"]);
-         exec("/project/test2 " . $arg1 . " " . $arg2, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp1a/areaofcircle2NEW " . $arg1 . " " . $arg2, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
