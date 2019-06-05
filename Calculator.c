@@ -13,16 +13,18 @@ float areaOfCircle(float r)
 int main(int argc, char* argv[])
 {
   //first check to see if two args (3 including program name) were entered 
-  if (argc != 3)
+  if (argc != 4)
   {
-    printf("%s : expected 2 args, please enter two integers\n", argv[0]);
+    printf("%s : expected 2 args and an operation\n", argv[0]);
     return 1;
   }
 
   // at this point we know we have two args, let's check that they are floats
   float arg1;
+  
   // ssscanf scans a string for a format - in this case an float (%f) and returns
   // the number of items found
+  
   int found = sscanf(argv[1], "%f", &arg1);
   if (found != 1)
   {
