@@ -15,11 +15,11 @@
        $arg1 = $arg2 = $arg3 = $output = $retc = "";
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
-         $arg2 = test_input($_POST["arg2"]);
          $arg3 = test_input($_POST["arg3"]);
+	 $arg2 = test_input($_POST["arg2"]);
          
          //May have to modify this line to include another argument
-         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg2 . " " . $arg3, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg3 . " " . $arg2, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -43,9 +43,9 @@
          echo "<h2>Your Input:</h2>";
          echo $arg1;
          echo "<br>";
-         echo $arg2;
-         echo "<br>";
          echo $arg3;
+         echo "<br>";
+         echo $arg2;
          echo "<br>";
        
          echo "<h2>Program Output (an array):</h2>";
@@ -56,7 +56,7 @@
        
          echo "<h2>Program Return Code:</h2>";
          echo $retc;
-       }
+       }hi
     ?>
     
   </body>
