@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
     return 1;
   }
   
-  char arg3[50];
+  char arg3;
   float ans;
   //for (float r = arg1; r <= arg2; r++)          //Interates through the in$
   //{
