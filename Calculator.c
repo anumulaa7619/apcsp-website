@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
   }
 
   float arg2;
-  found = sscanf(argv[2], "%f", &arg2);
+  found = sscanf(argv[3], "%f", &arg2);
   if (found != 1)
   {
     printf("second arg is not a valid input\n");
@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
   }
   
   char arg3[50];
-  found = sscanf(argv[3], "%s", &arg3);
+  found = sscanf(argv[2], "%s", &arg3);
   char add[10] = "+";
   char minus[10] = "-";
   char mul[10] = "*";
