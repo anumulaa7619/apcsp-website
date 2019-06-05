@@ -9,7 +9,7 @@
 
     <h1>Final Project - Calculator</h1>
     <p>By Arjun Anumula & Trevor Cai</p>
-    <p>To compute basic arithmetic, enter the following symbols:</p>
+    <b>To compute basic arithmetic, enter the following symbols:</b>
     <p>Add  (+)</p>
     <p>Subtract (-)</p>
     <p>Multiply (*)</p>
@@ -17,7 +17,7 @@
     <p>Exponent (^)</p>
     <p>Modulus, or remainder when divided (%)</p>
     <br>
-    <p>To compute more advanced operations on a single number, leave the second argument blank</p>
+    <b>To compute more advanced operations on a single number, leave the second argument blank</b>
     <p>Factorial (!)</p>
     
 
