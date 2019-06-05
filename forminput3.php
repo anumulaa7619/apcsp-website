@@ -19,7 +19,7 @@
          $arg3 = test_input($_POST["arg3"]);
          
          //May have to modify this line to include another argument
-         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg2, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg2 . " " . $arg3, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
