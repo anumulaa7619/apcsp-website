@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 float areaOfCircle(float r) 
 {
@@ -40,7 +41,7 @@ int main(int argc, char* argv[])
     return 1;
   }
   
-  char arg3;
+  char arg3[50];
   found = sscanf(argv[3], "%c", &arg3);
   if (found != 1)
   {
@@ -54,25 +55,25 @@ int main(int argc, char* argv[])
   //      printf("A circle of r = %f is has area = %f\n", r, compute);
   //}
   
-  if (char arg3 == "+")
+  if (strcmp(arg3, "+") == 0)
   {
     float sum = arg1 + arg2;
     printf("%f\n", sum);
   }
   
-  if (char arg3 == "-")
+  if (strcmp(arg3, "-") == 0)
   {
     float diff = arg1 - arg2;
     printf("%f\n", diff);
   }
   
-  if (char arg3 == "*")
+  if (strcmp(arg3, "*") == 0)
   {
     float prod = arg1 * arg2;
     printf("%f\n", prod);
   }
   
-  if (char arg3 == "-")
+  if (strcmp(arg3, "/") == 0)
   {
     float quot = arg1 / arg2;
     printf("%f\n", quot);
