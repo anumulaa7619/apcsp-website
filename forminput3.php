@@ -31,8 +31,8 @@
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Arg1: <input type="text" name="arg1">
-      Arg2: <input type="text" name="arg2">
-      Arg3: <input type="text" name="arg3">
+      Operation: <input type="text" name="arg3">
+      Arg3: <input type="text" name="arg2">
       <br>
       <input type="submit" value="Go!">
     </form>
