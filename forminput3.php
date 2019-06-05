@@ -7,8 +7,23 @@
 
   <body>
 
-    <h1>Final Project</h1>
-    <p>Enter 2 numeric values in the first 2 boxes and enter an operation for the program to execute in the third box</p>
+    <h1>Final Project - Calculator</h1>
+    <h1>By Arjun Anumula & Trevor Cai</h1>
+    <br>
+    <p>To compute basic arithmetic, enter the following symbols:</p>
+    <p>Add - (+)</p>
+    <p>Subtract - (-)</p>
+    <p>Multiply - (*)</p>
+    <p>Divide - (/)</p>
+    <p>Exponent - (^)</p>
+    <p>Modulus, or remainder when divided - (%)</p>
+    <br>
+    <p>To compute more advanced operations on a single number, leave the second argument blank</p>
+    <p>Factorial - (!)</p>
+    
+
+    <br>
+    
 
     <?php
        // define variables and set to empty values
@@ -32,7 +47,8 @@
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Arg1: <input type="text" name="arg1">
       Operation: <input type="text" name="arg3">
-      Arg3: <input type="text" name="arg2">
+      Arg2: <input type="text" name="arg2">
+      <br>
       <br>
       <input type="submit" value="Go!">
     </form>
