@@ -9,6 +9,7 @@ float areaOfCircle(float r)
   return area;
 }
 
+//hello
 //This is an function defined before the int main which returns an area us$
 
 int main(int argc, char* argv[])
