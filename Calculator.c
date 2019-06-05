@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
   char add[10] = "+";
   char minus[10] = "-";
   char mul[10] = "*";
-  char div[10] = "+";
+  char div[10] = "/";
   float ans;
   //for (float r = arg1; r <= arg2; r++)          //Interates through the in$
   //{
