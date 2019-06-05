@@ -52,15 +52,15 @@ int main(int argc, char* argv[])
   {
     ans = arg1 + arg2;
     printf("%f\n", ans);
-  }else if (strcmp(arg3, "-") == 0)
+  }else if (strcmp(&arg3, "-") == 0)
   {
     ans = arg1 - arg2;
     printf("%f\n", ans);
-  }else if (strcmp(arg3, "*") == 0)
+  }else if (strcmp(&arg3, "*") == 0)
   {
     ans = arg1 * arg2;
     printf("%f\n", ans);
-  }else if (strcmp(arg3, "/") == 0)
+  }else if (strcmp(&arg3, "/") == 0)
   {
     ans = arg1 / arg2;
     printf("%f\n", ans);
