@@ -8,18 +8,18 @@
   <body>
 
     <h1>Final Project - Calculator</h1>
-    <h1>By Arjun Anumula & Trevor Cai</h1>
+    <p>By Arjun Anumula & Trevor Cai</p>
     <br>
     <p>To compute basic arithmetic, enter the following symbols:</p>
-    <p>Add - (+)</p>
-    <p>Subtract - (-)</p>
-    <p>Multiply - (*)</p>
-    <p>Divide - (/)</p>
-    <p>Exponent - (^)</p>
-    <p>Modulus, or remainder when divided - (%)</p>
+    <p>Add  (+)</p>
+    <p>Subtract (-)</p>
+    <p>Multiply (*)</p>
+    <p>Divide (/)</p>
+    <p>Exponent (^)</p>
+    <p>Modulus, or remainder when divided (%)</p>
     <br>
     <p>To compute more advanced operations on a single number, leave the second argument blank</p>
-    <p>Factorial - (!)</p>
+    <p>Factorial (!)</p>
     
 
     <br>
