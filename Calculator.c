@@ -42,6 +42,7 @@ int main(int argc, char* argv[])
   }
   
   char arg3[50];
+  found = sscanf(argv[3], "%s", &arg3);
   char add[10] = "+";
   char minus[10] = "-";
   char mul[10] = "*";
