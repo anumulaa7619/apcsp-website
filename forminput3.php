@@ -9,7 +9,6 @@
 
     <h1>Final Project - Calculator</h1>
     <p>By Arjun Anumula & Trevor Cai</p>
-    <br>
     <p>To compute basic arithmetic, enter the following symbols:</p>
     <p>Add  (+)</p>
     <p>Subtract (-)</p>
