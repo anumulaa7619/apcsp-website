@@ -41,26 +41,30 @@ int main(int argc, char* argv[])
     return 1;
   }
   
-  char arg3;
+  char arg3[50];
+  char add[10] = "+";
+  char minus[10] = "-";
+  char mul[10] = "*";
+  char div[10] = "+";
   float ans;
   //for (float r = arg1; r <= arg2; r++)          //Interates through the in$
   //{
   //      float compute = areaOfCircle(r);
   //      printf("A circle of r = %f is has area = %f\n", r, compute);
   //}
-  if (strcmp(&arg3, "add") == 0)
+  if (strcmp(arg3, add) == 0)
   {
     ans = arg1 + arg2;
     printf("%f\n", ans);
-  }else if (strcmp(&arg3, "-") == 0)
+  }else if (strcmp(arg3, minus) == 0)
   {
     ans = arg1 - arg2;
     printf("%f\n", ans);
-  }else if (strcmp(&arg3, "*") == 0)
+  }else if (strcmp(arg3, mul) == 0)
   {
     ans = arg1 * arg2;
     printf("%f\n", ans);
-  }else if (strcmp(&arg3, "/") == 0)
+  }else if (strcmp(arg3, div) == 0)
   {
     ans = arg1 / arg2;
     printf("%f\n", ans);
