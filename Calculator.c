@@ -42,13 +42,7 @@ int main(int argc, char* argv[])
   }
   
   char arg3[50];
-  found = sscanf(argv[3], "%c", &arg3);
-  if (found != 1)
-  {
-    printf("operation is not defined, enter a valid operation\n");
-    return 1;
-  }
-  
+  float ans;
   //for (float r = arg1; r <= arg2; r++)          //Interates through the in$
   //{
   //      float compute = areaOfCircle(r);
@@ -57,26 +51,22 @@ int main(int argc, char* argv[])
   
   if (strcmp(arg3, "+") == 0)
   {
-    float sum = arg1 + arg2;
-    printf("%f\n", sum);
-  }
-  
-  if (strcmp(arg3, "-") == 0)
+    ans = arg1 + arg2;
+    printf("%f\n", ans);
+  }else if (strcmp(arg3, "-") == 0)
   {
-    float diff = arg1 - arg2;
-    printf("%f\n", diff);
-  }
-  
-  if (strcmp(arg3, "*") == 0)
+    ans = arg1 - arg2;
+    printf("%f\n", ans);
+  }else if (strcmp(arg3, "*") == 0)
   {
-    float prod = arg1 * arg2;
-    printf("%f\n", prod);
-  }
-  
-  if (strcmp(arg3, "/") == 0)
+    ans = arg1 * arg2;
+    printf("%f\n", ans);
+  }else if (strcmp(arg3, "/") == 0)
   {
-    float quot = arg1 / arg2;
-    printf("%f\n", quot);
+    ans = arg1 / arg2;
+    printf("%f\n", ans);
+  }else{
+    printf("Invalid Opperation");
   }
   
   
