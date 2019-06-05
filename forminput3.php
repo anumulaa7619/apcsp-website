@@ -7,16 +7,17 @@
 
   <body>
 
-    <h1>Project</h1>
-    <p>View(v) | Enter(e) | Exit(x)</p>
+    <h1>Final Project</h1>
+    <p>Enter 2 numeric values in the first 2 boxes and enter an operation for the program to execute in the third box</p>
 
     <?php
        // define variables and set to empty values
-       $arg1 = $arg2 = $output = $retc = "";
+       $arg1 = $arg2 = $arg3 = $output = $retc = "";
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
          $arg2 = test_input($_POST["arg2"]);
-         exec("/usr/lib/cgi-bin/sp1a/test2 " . $arg1 . " " . $arg2, $output, $retc); 
+         $arg3 = test_input($_POST["arg3"]);
+         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg2, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -29,6 +30,7 @@
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Arg1: <input type="text" name="arg1"><br>
       Arg2: <input type="text" name="arg2"><br>
+      Arg3: <input type="text" name="arg3"><br>
       <br>
       <input type="submit" value="Go!">
     </form>
@@ -40,6 +42,8 @@
          echo $arg1;
          echo "<br>";
          echo $arg2;
+         echo "<br>";
+         echo $arg3;
          echo "<br>";
        
          echo "<h2>Program Output (an array):</h2>";
