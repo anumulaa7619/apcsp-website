@@ -48,8 +48,7 @@ int main(int argc, char* argv[])
   //      float compute = areaOfCircle(r);
   //      printf("A circle of r = %f is has area = %f\n", r, compute);
   //}
-  printf("com");
-  if (strcmp(arg3, "+") == 0)
+  if (strcmp(arg3, "add") == 0)
   {
     ans = arg1 + arg2;
     printf("%f\n", ans);
