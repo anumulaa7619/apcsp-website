@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Form Input 2</title>
+    <link href="calc.css" rel="stylesheet" type="text/css"/>
   </head>
 
 
