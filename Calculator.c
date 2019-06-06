@@ -48,6 +48,8 @@ int main(int argc, char* argv[])
   char minus[10] = "-";
   char mul[10] = "*";
   char div[10] = "/";
+  char fact[10] = "!";
+  char mod[10] = "%";
   float ans;
   //for (float r = arg1; r <= arg2; r++)          //Interates through the in$
   //{
@@ -58,11 +60,13 @@ int main(int argc, char* argv[])
   {
     ans = arg1 + arg2;
     printf("%f\n", ans);
-  }else if (strcmp(arg3, minus) == 0)
+  }
+  else if (strcmp(arg3, minus) == 0)
   {
     ans = arg1 - arg2;
     printf("%f\n", ans);
-  }else if (strcmp(arg3, mul) == 0)
+  }
+  else if (strcmp(arg3, mul) == 0)
   {
     ans = arg1 * arg2;
     printf("%f\n", ans);
@@ -70,11 +74,28 @@ int main(int argc, char* argv[])
   {
     ans = arg1 / arg2;
     printf("%f\n", ans);
-  }else{
+  }
+  else if (strcmp(arg3, fact) == 0)
+  {
+    if (ceilf(arg3) == arg3)
+    {
+      ans = 1;
+      for (float i = arg1; i > 0; i=i-1)
+      {
+        ans = ans*i;
+      }
+      printf("%f\n", ans);
+    }
+    else
+    {
+      printf("Invalid Opperation, enter an integer to use factorial function");
+    }
+  }
+      
+  else
+  {
     printf("Invalid Opperation");
   }
   
   
-  
-  
-}
+   
