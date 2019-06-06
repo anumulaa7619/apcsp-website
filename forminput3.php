@@ -19,7 +19,7 @@
     <p>Exponent (^)</p>
     <p>Modulus, or remainder when divided (%)</p>
     <br>
-    <b>To compute more advanced operations on a single number, leave the second argument blank</b>
+    <b id="PH">To compute more advanced operations on a single number, leave the second argument blank</b>
     <p>Factorial (!)</p>
     
 
