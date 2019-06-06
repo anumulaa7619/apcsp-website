@@ -12,6 +12,13 @@
 .ti{
   text-indent: 20px;
 }
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    height: 100px;
+    font-family: 'Catamaran';
+}
 .tii{
   text-indent:40px;
 }
