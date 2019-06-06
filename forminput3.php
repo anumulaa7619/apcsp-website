@@ -28,14 +28,15 @@
 
     <?php
        // define variables and set to empty values
-       $arg1 = $arg2 = $arg3 = $output = $retc = "";
+       $arg1 = $arg2 = $arg3 = $arg4 = $output = $retc = "";
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	 $arg4 = test_input($_POST["arg4"]);
          $arg1 = test_input($_POST["arg1"]);
          $arg3 = test_input($_POST["arg3"]);
 	 $arg2 = test_input($_POST["arg2"]);
          
          //May have to modify this line to include another argument
-         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg3 . " " . $arg2, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg4 . " " . $arg1 . " " . $arg3 . " " . $arg2, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -46,8 +47,8 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      Function(option): <input type="text" name="arg4">
-      Arg1: <input type="text" name="arg1">
+      Function (optional): <input type="text" name="arg4">
+      Arg1: <input type="text" name="arg1"><br>
       Arg2: <input type="text" name="arg3">
       Arg3: <input type="text" name="arg2">
       <br>
@@ -59,6 +60,8 @@
        // only display if return code is numeric - i.e. exec has been called
        if (is_numeric($retc)) {
          echo "<h2>Your Input:</h2>";
+         echo $arg4;
+         echo "<br>";	       
          echo $arg1;
          echo "<br>";
          echo $arg3;
