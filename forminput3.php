@@ -9,7 +9,7 @@
 
   <body>
 
-    <h1 class="tti"  style="background: linear-gradient(141deg, #ED2828 0%, #ED5828 51%, #ED6A28 75%);" id="PH">Final Project - Calculator</h1>
+    <h1 class="center hff" style="background: linear-gradient(141deg, #ED2828 0%, #ED5828 51%, #ED6A28 75%);" id="PH">Final Project - Calculator</h1>
     <p class="center hff" id="PH">By Arjun Anumula & Trevor Cai</p>
     <b class="center hff" id="PH">To compute basic arithmetic, enter the following symbols:</b>
     <p>Add  (+)</p>
