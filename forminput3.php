@@ -3,6 +3,7 @@
   <head>
     <title>Form Input 2</title>
     <link href="calc.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:900|Philosopher|Spectral+SC" rel="stylesheet">
   </head>
 
 
