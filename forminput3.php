@@ -50,7 +50,6 @@
       Arg1: <input type="text" name="arg1">
       Arg2: <input type="text" name="arg3">
       Arg3: <input type="text" name="arg2">
-      Arg4: <input type="text" name="arg4">
       <br>
       <br>
       <input type="submit" value="Go!">
