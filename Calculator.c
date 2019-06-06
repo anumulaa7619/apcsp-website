@@ -89,13 +89,13 @@ int main(int argc, char* argv[])
     }
     else
     {
-      printf("Invalid Opperation, enter an integer to use factorial function");
+      printf("Invalid Operation, enter an integer to use factorial function");
     }
   }
       
   else
   {
-    printf("Invalid Opperation");
+    printf("Invalid Operation");
   }
   
   
