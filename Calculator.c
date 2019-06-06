@@ -36,11 +36,11 @@ int main(int argc, char* argv[])
 
   float arg2;
   found = sscanf(argv[3], "%f", &arg2);
-  if (found != 1)
-  {
-    printf("second arg is not a valid input\n");
-    return 1;
-  }
+  //if (found != 1)
+  //{
+    //printf("second arg is not a valid input\n");
+    //return 1;
+  //}
   
   char arg3[50];
   found = sscanf(argv[2], "%s", &arg3);
