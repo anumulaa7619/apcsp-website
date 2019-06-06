@@ -11,7 +11,7 @@
 
     <h1 class="center hff" style="background: linear-gradient(141deg, #ED2828 0%, #ED5828 51%, #ED6A28 75%);" id="PH">Final Project - Calculator</h1>
     <p class="center hff" id="PH">By Arjun Anumula & Trevor Cai</p>
-    <b class="center hff" id="PH">To compute basic arithmetic, enter the following symbols:</b>
+    <b class="center hff" id="PH">To compute basic arithmetic input the opperation in the arg2 and your inputs in arg1 and arg3</b>
     <p>Add  (+)</p>
     <p>Subtract (-)</p>
     <p>Multiply (*)</p>
@@ -19,7 +19,7 @@
     <p>Exponent (^)</p>
     <p>Modulus, or remainder when divided (%)</p>
     <br>
-    <b id="PH">To compute more advanced operations on a single number, leave the second argument blank</b>
+    <b class="center hff" id="PH">To compute more advanced operations on a single number, leave the second argument blank</b>
     <p>Factorial (!)</p>
     
 
