@@ -65,14 +65,11 @@
          echo $arg2;
          echo "<br>";
        
-         echo "<h2>Program Output (an array):</h2>";
+         echo "<h2>Ans:</h2>";
          foreach ($output as $line) {
            echo $line;
            echo "<br>";
          }
-       
-         echo "<h2>Program Return Code:</h2>";
-         echo $retc;
        }hi
     ?>
     
