@@ -15,11 +15,11 @@ float areaOfCircle(float r)
 int main(int argc, char* argv[])
 {
   //first check to see if two args (3 including program name) were entered 
-  if (argc != 4)
-  {
-    printf("%s : expected 2 args and an operation\n", argv[0]);
-    return 1;
-  }
+  //if (argc != 4)
+  //{
+    //printf("%s : expected 2 args and an operation\n", argv[0]);
+    //return 1;
+  //}
 
   // at this point we know we have two args, let's check that they are floats
   float arg1;
