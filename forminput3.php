@@ -8,9 +8,9 @@
 
   <body>
 
-    <h1>Final Project - Calculator</h1>
+    <h1 class="center hff" id="PH">Final Project - Calculator</h1>
     <p>By Arjun Anumula & Trevor Cai</p>
-    <b>To compute basic arithmetic, enter the following symbols:</b>
+    <b class="center hff" id="PH">To compute basic arithmetic, enter the following symbols:</b>
     <p>Add  (+)</p>
     <p>Subtract (-)</p>
     <p>Multiply (*)</p>
