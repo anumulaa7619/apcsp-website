@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
   }
   else if (strcmp(arg3, fact) == 0)
   {
-  printf("test")
+  printf("test");
   found = sscanf(argv[1], "%d", &arg1);
   if (found == 1)
     {
