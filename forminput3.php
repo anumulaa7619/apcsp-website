@@ -46,6 +46,7 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+      Function(option): <input type="text" name="arg4">
       Arg1: <input type="text" name="arg1">
       Arg2: <input type="text" name="arg3">
       Arg3: <input type="text" name="arg2">
