@@ -86,7 +86,7 @@ int main(int argc, char* argv[])
   if (found == 1)
     {
       ans = 1;
-      for (float i = arg1; i > 0; i=i-1)
+      for (float i = arg1; i > 1; i=i-1)
       {
         ans = ans*i;
       }
