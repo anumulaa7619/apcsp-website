@@ -34,16 +34,16 @@ int main(int argc, char* argv[])
     return 1;
   }
 
-  float arg2;
-  found = sscanf(argv[3], "%f", &arg2);
+  float arg3;
+  found = sscanf(argv[3], "%f", &arg3);
   //if (found != 1)
   //{
     //printf("second arg is not a valid input\n");
     //return 1;
   //}
   
-  char arg3[50];
-  found = sscanf(argv[2], "%s", &arg3);
+  char arg2[50];
+  found = sscanf(argv[2], "%s", &arg2);
   char add[10] = "+";
   char minus[10] = "-";
   char mul[10] = "*";
@@ -56,26 +56,27 @@ int main(int argc, char* argv[])
   //      float compute = areaOfCircle(r);
   //      printf("A circle of r = %f is has area = %f\n", r, compute);
   //}
-  if (strcmp(arg3, add) == 0)
+  if (strcmp(arg2, add) == 0)
   {
-    ans = arg1 + arg2;
+    ans = arg1 + arg3;
     printf("%f\n", ans);
   }
-  else if (strcmp(arg3, minus) == 0)
+  else if (strcmp(arg2, minus) == 0)
   {
-    ans = arg1 - arg2;
+    ans = arg1 - arg3;
     printf("%f\n", ans);
   }
-  else if (strcmp(arg3, mul) == 0)
+  else if (strcmp(arg2, mul) == 0)
   {
-    ans = arg1 * arg2;
+    ans = arg1 * arg3;
     printf("%f\n", ans);
-  }else if (strcmp(arg3, div) == 0)
+  }
+  else if (strcmp(arg2, div) == 0)
   {
     ans = arg1 / arg2;
     printf("%f\n", ans);
   }
-  else if (strcmp(arg3, fact) == 0)
+  else if (strcmp(arg2, fact) == 0)
   {
   printf("test");
   found = sscanf(argv[1], "%d", &arg1);
