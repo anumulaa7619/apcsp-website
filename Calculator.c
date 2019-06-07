@@ -86,9 +86,12 @@ int main(int argc, char* argv[])
   if (found == 1)
     {
       ans = 1;
-      for (float i = arg1; i > 1; i=i-1)
+      for (float i = 0; i < arg1; i++)
       {
-        ans = ans*i;
+        int count = arg1;
+        
+        ans = ans * count;
+        count = count - 1;
       }
       printf("%f\n", ans);
     }
