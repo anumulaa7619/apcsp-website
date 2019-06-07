@@ -32,11 +32,11 @@
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	 $arg4 = test_input($_POST["arg4"]);
          $arg1 = test_input($_POST["arg1"]);
-         $arg3 = test_input($_POST["arg3"]);
 	 $arg2 = test_input($_POST["arg2"]);
+	 $arg3 = test_input($_POST["arg3"]);
          
          //May have to modify this line to include another argument
-         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg4 . " " . $arg1 . " " . $arg3 . " " . $arg2, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg4 . " " . $arg1 . " " . $arg2 . " " . $arg3, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -49,8 +49,8 @@
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Function (optional): <input type="text" name="arg4"><br><br><br>
       Arg1: <input type="text" name="arg1">
-      Arg2: <input type="text" name="arg3">
-      Arg3: <input type="text" name="arg2">
+      Arg2: <input type="text" name="arg2">
+      Arg3: <input type="text" name="arg3">
       <br>
       <br>
       <input type="submit" value="Go!">
@@ -64,9 +64,9 @@
          echo "<br>";	       
          echo $arg1;
          echo "<br>";
-         echo $arg3;
-         echo "<br>";
          echo $arg2;
+         echo "<br>";
+         echo $arg3;
          echo "<br>";
        
          echo "<h2>Ans:</h2>";
