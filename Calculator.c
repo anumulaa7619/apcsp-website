@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
   }
 
   float arg3;
-  if (argc == 4)
+  if (argc > 3)
   {
   found = sscanf(argv[3], "%f", &arg3);
   }
