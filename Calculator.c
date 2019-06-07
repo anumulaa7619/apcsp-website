@@ -92,6 +92,7 @@ int main(int argc, char* argv[])
         
         ans = ans * count;
         count = count - 1;
+        printf("%d", ans);
       }
       printf("%f\n", ans);
     }
