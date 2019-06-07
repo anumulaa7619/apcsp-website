@@ -86,7 +86,7 @@ int main(int argc, char* argv[])
   if (found == 1)
     {
       ans = 1;
-      for (float i = 0; i < arg1; i++)
+      for (float i = 0; i < arg1 - 1; i++)
       {
         int count = arg1;
         
