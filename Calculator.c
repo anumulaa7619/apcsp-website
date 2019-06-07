@@ -73,7 +73,7 @@ int main(int argc, char* argv[])
   }
   else if (strcmp(arg2, div) == 0)
   {
-    ans = arg1 / arg2;
+    ans = arg1 / arg3;
     printf("%f\n", ans);
   }
   else if (strcmp(arg2, fact) == 0)
