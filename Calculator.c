@@ -101,7 +101,7 @@ int main(int argc, char* argv[]){
   } else if (strcmp(arg1, "aot") == 0){
     float arg3;
     sscanf(argv[3], "%f", &arg3);
-    ans = aot(arg2, arg4);
+    ans = aot(arg2, arg3);
     printf("%f", ans);
   } else {
     printf("Invalid Calc Type");
