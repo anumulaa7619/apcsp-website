@@ -14,7 +14,7 @@
     <b class="center hff" id="PH">To compute the operations below, input the operation in the arg2 and your inputs in arg1 and arg3. Also enter "s" into the function box</b>
     <p>Add  (+)</p>
     <p>Subtract (-)</p>
-    <p>Multiply (*)</p>
+    <p>Multiply (x)</p>
     <p>Divide (/)</p>
     <p>Factorial (!)</p>
     <p>Modulus, or remainder when divided (mod)</p>
