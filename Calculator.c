@@ -34,11 +34,11 @@ int main(int argc, char* argv[]){
   
   
   char arg4[10];
-  int found = sscanf(argv[4], "%s", arg4);
+  int found = sscanf(argv[1], "%s", arg4);
   
   
   float arg1;
-  found = sscanf(argv[1], "%f", &arg1);
+  found = sscanf(argv[2], "%f", &arg1);
   if (found != 1){
     printf("first arg is not a valid number\n");
     return 1;
@@ -71,7 +71,7 @@ int main(int argc, char* argv[]){
 
   if (strcmp(arg4, "s") == 0){
     char arg2[50];
-    found = sscanf(argv[2], "%s", arg2);
+    found = sscanf(argv[3], "%s", arg2);
     if (strcmp(arg2, add) == 0){
       ans = arg1 + arg3;
       printf("%f\n", ans);
@@ -100,7 +100,7 @@ int main(int argc, char* argv[]){
     printf("%f", ans);
   } else if (strcmp(arg4, "aot") == 0){
     float arg2;
-    sscanf(argv[2], "%f", &arg2);
+    sscanf(argv[3], "%f", &arg2);
     ans = aot(arg1, arg2);
     printf("%f", ans);
   } else {
