@@ -30,13 +30,13 @@
        // define variables and set to empty values
        $arg1 = $arg2 = $arg3 = $arg4 = $output = $retc = "";
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	 $arg4 = test_input($_POST["arg4"]);
-         $arg1 = test_input($_POST["arg1"]);
-	 $arg2 = test_input($_POST["arg2"]);
-	 $arg3 = test_input($_POST["arg3"]);
+	 $arg4 = test_input($_POST["arg1"]);
+         $arg1 = test_input($_POST["arg2"]);
+	 $arg2 = test_input($_POST["arg3"]);
+	 $arg3 = test_input($_POST["arg4"]);
          
          //May have to modify this line to include another argument
-         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg4 . " " . $arg1 . " " . $arg2 . " " . $arg3, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg2 . " " . $arg3 . " " . $arg4, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -47,10 +47,10 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      Function (optional): <input type="text" name="arg4"><br><br><br>
-      Arg1: <input type="text" name="arg1">
-      Arg2: <input type="text" name="arg2">
-      Arg3: <input type="text" name="arg3">
+      Function: <input type="text" name="arg1"><br><br><br>
+      Arg1: <input type="text" name="arg2">
+      Arg2: <input type="text" name="arg3">
+      Arg3: <input type="text" name="arg4">
       <br>
       <br>
       <input type="submit" value="Go!">
@@ -60,13 +60,13 @@
        // only display if return code is numeric - i.e. exec has been called
        if (is_numeric($retc)) {
          echo "<h2>Your Input:</h2>";
-         echo $arg4;
-         echo "<br>";	       
          echo $arg1;
-         echo "<br>";
+         echo "<br>";	       
          echo $arg2;
          echo "<br>";
          echo $arg3;
+         echo "<br>";
+         echo $arg4;
          echo "<br>";
        
          echo "<h2>Ans:</h2>";
