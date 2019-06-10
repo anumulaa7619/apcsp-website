@@ -30,10 +30,10 @@
        // define variables and set to empty values
        $arg1 = $arg2 = $arg3 = $arg4 = $output = $retc = "";
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	 $arg4 = test_input($_POST["arg1"]);
-         $arg1 = test_input($_POST["arg2"]);
-	 $arg2 = test_input($_POST["arg3"]);
-	 $arg3 = test_input($_POST["arg4"]);
+	 $arg1 = test_input($_POST["arg1"]);
+         $arg2 = test_input($_POST["arg2"]);
+	 $arg3 = test_input($_POST["arg3"]);
+	 $arg4 = test_input($_POST["arg4"]);
          
          //May have to modify this line to include another argument
          exec("/usr/lib/cgi-bin/sp1a/Calculator " . $arg1 . " " . $arg2 . " " . $arg3 . " " . $arg4, $output, $retc); 
