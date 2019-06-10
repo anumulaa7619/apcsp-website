@@ -11,13 +11,13 @@
 
     <h1 class="center hff" style="background: linear-gradient(141deg, #ED2828 0%, #ED5828 51%, #ED6A28 75%);" id="PH">Final Project - Calculator</h1>
     <p class="center hff" id="PH">By Arjun Anumula & Trevor Cai</p>
-    <b class="center hff" id="PH">To compute basic arithmetic input, the operation in the arg2 and your inputs in arg1 and arg3</b>
+    <b class="center hff" id="PH">To compute the operations below, input the operation in the arg2 and your inputs in arg1 and arg3. Also enter "s" into the function box</b>
     <p>Add  (+)</p>
     <p>Subtract (-)</p>
     <p>Multiply (*)</p>
     <p>Divide (/)</p>
     <p>Factorial (!)</p>
-    <p>Modulus, or remainder when divided (%)</p>
+    <p>Modulus, or remainder when divided (mod)</p>
     <br>
     <b class="center hff" id="PH">To compute more advanced operations, input a different phrase into the function box.</b>
     <p>Area of Circle: Function: aoc | arg1: radius </p>
