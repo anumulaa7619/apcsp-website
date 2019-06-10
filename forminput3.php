@@ -16,7 +16,7 @@
     <p>Subtract (-)</p>
     <p>Multiply (x)</p>
     <p>Divide (/)</p>
-    <p>Factorial (!)</p>
+    <p>Factorial (fact)</p>
     <p>Modulus, or remainder when divided (mod)</p>
     <br>
     <b class="center hff" id="PH">To compute more advanced operations, input a different phrase into the function box.</b>
