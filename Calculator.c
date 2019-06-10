@@ -38,7 +38,7 @@ int main(int argc, char* argv[]){
     return 1;
   }
 
-  char arg4[100];
+  char arg4[10];
   found = sscanf(argv[4], "%s", arg4);
   
   float arg3;
