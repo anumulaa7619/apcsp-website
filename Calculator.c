@@ -34,11 +34,11 @@ int main(int argc, char* argv[]){
   
   
   char arg4[10];
-  found = sscanf(argv[4], "%s", arg4);
+  int found = sscanf(argv[4], "%s", arg4);
   
   
   float arg1;
-  int found = sscanf(argv[1], "%f", &arg1);
+  found = sscanf(argv[1], "%f", &arg1);
   if (found != 1){
     printf("first arg is not a valid number\n");
     return 1;
