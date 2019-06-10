@@ -59,7 +59,7 @@ int main(int argc, char* argv[]){
 
   char add[10] = "+";
   char minus[10] = "-";
-  char mul[10] = "*";
+  char mul[10] = "x";
   char div[10] = "/";
   char fact[10] = "fact";
   char mod[10] = "%";
