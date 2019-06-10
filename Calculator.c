@@ -73,16 +73,16 @@ int main(int argc, char* argv[]){
     char arg3[50];
     found = sscanf(argv[3], "%s", arg3);
     if (strcmp(arg3, add) == 0){
-      ans = arg2 + arg3;
+      ans = arg2 + arg4;
       printf("%f\n", ans);
     } else if (strcmp(arg3, minus) == 0){
-      ans = arg2 - arg3;
+      ans = arg2 - arg4;
       printf("%f\n", ans);
     } else if (strcmp(arg3, mul) == 0){
-      ans = arg2 * arg3;
+      ans = arg2 * arg4;
       printf("%f\n", ans);
     } else if (strcmp(arg3, div) == 0){
-      ans = arg2 / arg3;
+      ans = arg2 / arg4;
       printf("%f\n", ans);
     } else if (strcmp(arg3, fact) == 0){
       ans = 1;
@@ -91,7 +91,7 @@ int main(int argc, char* argv[]){
       }
       printf("%f\n", ans);
     } else if (strcmp(arg3, "mod") == 0){
-      mo(arg2, arg3);
+      mo(arg2, arg4);
     } else{
       printf("Invalid Operation");
     }
@@ -101,7 +101,7 @@ int main(int argc, char* argv[]){
   } else if (strcmp(arg1, "aot") == 0){
     float arg3;
     sscanf(argv[3], "%f", &arg3);
-    ans = aot(arg2, arg3);
+    ans = aot(arg2, arg4);
     printf("%f", ans);
   } else {
     printf("Invalid Calc Type");
