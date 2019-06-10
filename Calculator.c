@@ -18,13 +18,13 @@ float mo(float b, float o){
   float m = o;
   while (c == 1){
     a = a - m;
-    if ( a > 0 ){
+    if ( a >= 0 ){
       count++;
     } else{
       c = 0;
     }
   }
-  d = a - (count * o);
+  d = b - (count * o);
   printf("%f", d);
   return d;
 }
