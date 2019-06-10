@@ -31,6 +31,12 @@ float mo(float b, float o){
 
 int main(int argc, char* argv[]){
   
+  
+  
+  char arg4[10];
+  found = sscanf(argv[4], "%s", arg4);
+  
+  
   float arg1;
   int found = sscanf(argv[1], "%f", &arg1);
   if (found != 1){
@@ -38,8 +44,6 @@ int main(int argc, char* argv[]){
     return 1;
   }
 
-  char arg4[10];
-  found = sscanf(argv[4], "%s", arg4);
   
   float arg3;
   if (argc > 4){
