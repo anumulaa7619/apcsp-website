@@ -65,10 +65,6 @@ int main(int argc, char* argv[]){
   char mod[10] = "%";
   float ans;
 
-
-
-
-
   if (strcmp(arg1, "s") == 0){
     char arg3[50];
     found = sscanf(argv[3], "%s", arg3);
@@ -90,7 +86,11 @@ int main(int argc, char* argv[]){
         ans = ans * i;
       }
       printf("%f\n", ans);
-    } else if (strcmp(arg3, "mod") == 0){
+      }
+    
+    
+    
+    else if (strcmp(arg3, "mod") == 0){
       mo(arg2, arg4);
     } else{
       printf("Invalid Operation");
